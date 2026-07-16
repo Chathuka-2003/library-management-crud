@@ -5,7 +5,7 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
-//Setup database 11n
+//Setup database 1
 @Getter
 @Setter
 @AllArgsConstructor
