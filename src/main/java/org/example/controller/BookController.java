@@ -13,10 +13,12 @@ public class BookController {
     @Autowired
     BookService bookService;
 
+    //get all books as a list
     @GetMapping
     public List<BookDTO> getAll(){
         return bookService.getAll();
     }
+    
     @GetMapping("/{isbn}")
     public BookDTO findByIsbn(@PathVariable Long isbn){
         return bookService.searchByID(isbn);
