@@ -18,7 +18,8 @@ public class BookController {
     public List<BookDTO> getAll(){
         return bookService.getAll();
     }
-    
+
+    //get books by isbn
     @GetMapping("/{isbn}")
     public BookDTO findByIsbn(@PathVariable Long isbn){
         return bookService.searchByID(isbn);
